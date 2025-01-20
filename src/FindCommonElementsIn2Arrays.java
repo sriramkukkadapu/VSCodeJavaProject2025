@@ -33,8 +33,13 @@ public static void main(String args[]){
 
     for(int i=0;i<b.length;i++){
         if(map.containsKey(b[i])){
-            if(map)
+            if(map.get(b[i])==false){
+                map.put(b[i],true);
+                set.add(b[i]);
+            }
         }
     }
+
+    System.out.println("Approach 2: "+ set);
 }
 }
